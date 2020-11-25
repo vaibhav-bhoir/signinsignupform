@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Video</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        margin: 0 auto;
+        width: 80%;
+      }
+      h2 {
+        font-size: 36px;
+        font-weight: 500;
+        text-align: center;
+        margin: 35px 0;
+      }
+      video {
+        width: 100%;
+      }
+      .videowrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0px;
+      }
+      .videowrapper iframe {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Internal Video</h2>
+      <video controls>
+        <source src="sample.mp4" type="video/mp4" />
+        Your browser does not support mp4 videos change browser!!!.
+      </video>
+      <h2>Embedded Video From YouTube</h2>
+      <div class="videowrapper">
+        <iframe
+          src="https://www.youtube.com/embed/60ItHLz5WEA"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
