@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-page {
+  padding: 50px 0;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.account-page .form-container {
+  background: #fff;
+  width: 300px;
+  height: 560px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.account-page .form-container .form-btn {
+  display: inline-block;
+}
+
+.account-page .form-container span {
+  font-weight: bold;
+  padding: 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+.account-page .form-container #Indicator {
+  width: 100px;
+  height: 3px;
+  border: none;
+  background: #f8694a;
+  margin-top: 4px;
+  transform: translateX(100px);
+  transition: transform 1s;
+}
+
+.account-page .form-container form {
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 0.4s;
+}
+
+.account-page .form-container form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #f8694a;
+}
+
+.account-page .form-container form input:focus {
+  outline-color: #555;
+}
+
+.account-page .form-container form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.account-page .form-container form .btn:focus {
+  outline: none;
+}
+
+.account-page .form-container form a {
+  font-size: 12px;
+  color: #555;
+}
+
+.account-page .form-container #LoginForm {
+  left: -300px;
+}
+
+.account-page .form-container #RegForm {
+  left: 0;
+}
+
+.btn {
+  width: 100%;
+  background: #f8694a;
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .row-left {
+    display: none;
+  }
+  .row-right {
+    width: 100%;
+  }
+}
